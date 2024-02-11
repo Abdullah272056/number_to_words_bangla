@@ -36,6 +36,10 @@ class MyApp extends StatelessWidget {
                  NumberToWordsBangla().inputNumberConvertToBanglaWord(inputNumber: '502501035.51'),
                 textAlign: TextAlign.center,
               ),
+              Text(
+                 NumberToWordsBangla().engToBnConvert(englishNumber: '502501035.51'),
+                textAlign: TextAlign.center,
+              ),
             ],
           ),
         ),

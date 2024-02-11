@@ -137,8 +137,8 @@ class NumberToWordsBangla {
   String lakh = 'লক্ষ';
   String crore = 'কোটি';
 
-  String engToBnConvert(String number) {
-    return number.replaceAllMapped(RegExp(r'\d'), (match) => engToBn[match.group(0)]!);
+  String engToBnConvert({required String englishNumber}) {
+    return englishNumber.replaceAllMapped(RegExp(r'\d'), (match) => engToBn[match.group(0)]!);
   }
 
   String numToWord(num number) {
